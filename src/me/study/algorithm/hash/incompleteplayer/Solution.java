@@ -1,4 +1,4 @@
-package hash.incompleteplayer;
+package me.study.algorithm.hash.incompleteplayer;
 
 import java.util.HashMap;
 

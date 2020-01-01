@@ -1,4 +1,4 @@
-package hash.disguise;
+package me.study.algorithm.hash.disguise;
 
 import java.util.HashMap;
 

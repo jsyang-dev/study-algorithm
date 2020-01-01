@@ -1,4 +1,4 @@
-package hash.phonenumber;
+package me.study.algorithm.hash.phonenumber;
 
 import java.util.Arrays;
 

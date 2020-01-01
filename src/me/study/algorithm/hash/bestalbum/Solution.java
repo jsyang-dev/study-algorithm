@@ -1,4 +1,4 @@
-package hash.bestalbum;
+package me.study.algorithm.hash.bestalbum;
 
 import java.util.*;
 

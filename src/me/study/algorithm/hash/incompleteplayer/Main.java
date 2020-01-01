@@ -1,4 +1,4 @@
-package hash.incompleteplayer;
+package me.study.algorithm.hash.incompleteplayer;
 
 /**
  * [완주하지 못한 선수]

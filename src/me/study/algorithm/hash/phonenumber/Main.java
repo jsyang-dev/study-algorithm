@@ -1,4 +1,4 @@
-package hash.phonenumber;
+package me.study.algorithm.hash.phonenumber;
 
 /**
  * [전화번호 목록]

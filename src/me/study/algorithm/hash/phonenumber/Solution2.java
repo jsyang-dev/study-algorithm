@@ -1,4 +1,4 @@
-package hash.phonenumber;
+package me.study.algorithm.hash.phonenumber;
 
 class Solution2 {
     public boolean solution(String[] phone_book) {
