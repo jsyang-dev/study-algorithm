@@ -25,6 +25,11 @@ class Main {
         supplies = new int[] {20,5,10};
         k = 30;
         System.out.println(solution.solution(stock, dates, supplies, k));
+
+        stock = 4;
+        dates = new int[] {1, 2, 3, 4};
+        supplies = new int[] {10, 40, 30, 20};
+        k = 100;
+        System.out.println(solution.solution(stock, dates, supplies, k));
     }
 }
-
