@@ -8,8 +8,8 @@ class Solution {
         int result = 0;
         Map<Integer, Integer> map = new HashMap<>();
 
-        for (int i = 0; i < A.length; i++) {
-            map.put(A[i], map.getOrDefault(A[i], 0) + 1);
+        for (int key : A) {
+            map.put(key, map.getOrDefault(key, 0) + 1);
         }
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
