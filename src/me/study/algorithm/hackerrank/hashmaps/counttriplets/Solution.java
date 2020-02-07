@@ -27,9 +27,20 @@ class Solution {
         }
 
         for (Map.Entry<Long, List<Integer>> entry : map.entrySet()) {
-            long times = 0;
-            if (entry.getKey() > 1) {
-                // r로 몇번 나누면 1이 되는 수인지
+            List<Integer> value1 = entry.getValue();
+            List<Integer> value2 = map.get(entry.getKey() * r);
+            List<Integer> value3 = map.get(entry.getKey() * r * r);
+
+            if (value2 != null && value3 != null) {
+                for (int i = 0; i < value1.size(); i++) {
+                    for (int j = 0; j < value2.size(); j++) {
+                        for (int k = 0; k < value3.size(); k++) {
+                            if (value1.get(i) < value2.get(j) && value2.get(j) < value3.get(k)) {
+                                result++;
+                            }
+                        }
+                    }
+                }
             }
         }
 
