@@ -17,7 +17,7 @@ public class SolutionTest {
     public void test(int N, int answer) {
         int result = this.solution.solution(N);
 
-        assertEquals(result, answer);
+        assertEquals(answer, result);
     }
 
     private Object[] parametersForTest() {
