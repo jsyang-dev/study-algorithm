@@ -1,4 +1,4 @@
-package me.study.algorithm.hackerrank.stringmanipulation;
+package me.study.algorithm.hackerrank.stringmanipulation.makinganagrams;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
