@@ -1,26 +1,26 @@
 package me.study.algorithm.hackerrank.greedy.luckbalance;
 
-import java.util.Iterator;
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 class Solution {
     public int solution(int k, int[][] contests) {
         int result = 0;
-        SortedMap<Integer, Integer> importantMap = new TreeMap<>();
+        List<Integer> importantList = new ArrayList<>();
 
         for (int[] contest : contests) {
             result += contest[0];
             if (contest[1] == 1) {
-                importantMap.put(contest[0], contest[1]);
+                importantList.add(contest[0]);
             }
         }
 
-        int count = importantMap.size() - k;
-        Iterator<Integer> iterator = importantMap.keySet().iterator();
-        while (count > 0) {
-            result -= (iterator.next() * 2);
-            count--;
+        Collections.sort(importantList);
+
+        int count = importantList.size() - k;
+        for (int i = 0; i < count; i++) {
+            result -= (importantList.get(i) * 2);
         }
 
         return result;
