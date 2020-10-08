@@ -1,4 +1,4 @@
-package me.study.algorithm.programmers.challenge.season1.q2;
+package me.study.algorithm.programmers.challenge.season11.q2;
 
 import java.util.ArrayList;
 import java.util.List;

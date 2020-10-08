@@ -1,4 +1,4 @@
-package me.study.algorithm.programmers.challenge.season1.q1;
+package me.study.algorithm.programmers.challenge.season11.q1;
 
 import java.util.SortedSet;
 import java.util.TreeSet;

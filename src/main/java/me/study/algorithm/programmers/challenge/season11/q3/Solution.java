@@ -1,4 +1,4 @@
-package me.study.algorithm.programmers.challenge.season1.q3;
+package me.study.algorithm.programmers.challenge.season11.q3;
 
 import java.util.HashSet;
 
