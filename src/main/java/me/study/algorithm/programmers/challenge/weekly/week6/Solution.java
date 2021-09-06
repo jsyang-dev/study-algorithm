@@ -23,10 +23,10 @@ class Solution {
         List<float[]> listForSort = new ArrayList<>();
         for (int i = 0; i < boxerCount; i++) {
             listForSort.add(new float[]{
-                    matchCount[i] == 0 ? 0 : (float) winCount[i] / matchCount[i],        // 전체 승률
-                    matchCount[i] == 0 ? 0 : (float) winHeavierCount[i] / matchCount[i], // 자신보다 무거운 복서를 이긴 승률
-                    weights[i],     // 몸무게
-                    i + 1           // 번호
+                    matchCount[i] == 0 ? 0 : (float) winCount[i] / matchCount[i],       // 전체 승률
+                    winHeavierCount[i],     // 자신보다 무거운 복서를 이긴 횟수
+                    weights[i],             // 몸무게
+                    i + 1                   // 번호
             });
         }
         return listForSort;
