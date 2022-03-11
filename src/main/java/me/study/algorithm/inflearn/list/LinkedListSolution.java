@@ -9,5 +9,9 @@ public class LinkedListSolution {
         linkedList.add(new LinkedNode(3));
 
         linkedList.print();
+        linkedList.reverse1();
+        linkedList.print();
+        linkedList.reverse2();
+        linkedList.print();
     }
 }

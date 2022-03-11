@@ -24,7 +24,36 @@ public class LinkedList {
         tail = node;
     }
 
-    void reverse() {
+    void reverse1() {
+        LinkedNode current = head;
+        LinkedNode prev = null;
 
+        while (current != null) {
+            LinkedNode next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
+        }
+
+        tail = head;
+        head = prev;
+    }
+
+    void reverse2() {
+        LinkedNode head = this.head;
+        this.head = recursiveReverse(head);
+        this.tail = head;
+    }
+
+    private LinkedNode recursiveReverse(LinkedNode node) {
+        if (node == null || node.next == null) {
+            return node;
+        }
+
+        LinkedNode newHead = recursiveReverse(node.next);
+        node.next.next = node;
+        node.next = null;
+
+        return newHead;
     }
 }
