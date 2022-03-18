@@ -8,12 +8,17 @@ public class Solution {
         }
 
         int result = 0;
-        for (int i = 1; i <= N / 2; i++) {
+        double mid = Math.sqrt(N);
+
+        for (int i = 1; i < mid; i++) {
             if (N % i == 0) {
                 result++;
             }
         }
 
-        return result + 1;
+        if (Math.floor(mid) == mid) {
+            return result * 2 + 1;
+        }
+        return result * 2;
     }
 }

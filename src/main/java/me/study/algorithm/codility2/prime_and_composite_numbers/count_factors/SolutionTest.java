@@ -23,6 +23,8 @@ public class SolutionTest {
     private Object[] parametersForTest() {
         return new Object[]{
                 new Object[]{24, 8},
+                new Object[]{1, 1},
+                new Object[]{64, 7},
         };
     }
 }
